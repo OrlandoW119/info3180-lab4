@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<h1 class="page-header">View Images</h1>
+
+{% for img in imgs %}
+<img src="{{url_for('get_image', filename=img)}}" />
+{% endfor %}
+{% endblock %}
